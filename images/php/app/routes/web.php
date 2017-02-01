@@ -12,7 +12,7 @@
 */
 
 $app->get('/books', function () use ($app) {
-    return [
+    return [ 'books' => [
     	[
 	      'id' => 1,
 	      'title' => 'Lord of the Rings',
@@ -41,5 +41,5 @@ $app->get('/books', function () use ($app) {
 	      'year' => 1996,
 	      'page_count' => 754
     	],
-    ];
+    ]];
 });
