@@ -4,7 +4,7 @@ nginx:
   links:
     - php
   ports:
-    - "80:80"
+    - "3333:80"
 php:
   build: images/php
   volumes:
