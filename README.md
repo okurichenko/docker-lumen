@@ -16,8 +16,7 @@ cd docker-lumen
 now, create the app in the `images\php` directory named `app`
 
 ```bash
-cd images/php
-docker run --rm -it -v $(pwd):/data/www --entrypoint /root/.composer/vendor/bin/lumen alairock/lumen new app
+docker run --rm -it -v $(pwd)/images/php/app:/app --entrypoint /usr/local/bin/composer composer/composer install
 ```
 
 ### Configuration
